@@ -1,22 +1,9 @@
 import type React from "react";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  Send,
-  Mic,
-  Smile,
-  Paperclip,
-  X,
-  Image as ImageIcon,
-  MapPin,
-  FileText,
-  Trash2,
-  Square,
-  Pencil,
-} from "lucide-react";
+import { Send, Mic, X, Trash2, Square, Pencil } from "lucide-react";
 import { useStore } from "../store";
 import { autoResize } from "../lib";
-import EmojiPicker from "./EmojiPicker";
 import { cn } from "../utils/cn";
 
 const AR_DIGITS = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
@@ -32,14 +19,11 @@ export default function Composer() {
     setEditing,
     sendText,
     sendVoice,
-    sendImage,
     editMessage,
     toast,
   } = useStore();
 
   const [text, setText] = useState("");
-  const [showEmoji, setShowEmoji] = useState(false);
-  const [showAttach, setShowAttach] = useState(false);
 
   const [recording, setRecording] = useState(false);
   const [seconds, setSeconds] = useState(0);
@@ -49,7 +33,6 @@ export default function Composer() {
   const startTsRef = useRef(0);
 
   const taRef = useRef<HTMLTextAreaElement>(null);
-  const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (editing) {
@@ -69,26 +52,6 @@ export default function Composer() {
   const onChange = (v: string) => {
     setText(v);
     if (taRef.current) autoResize(taRef.current);
-  };
-
-  const insertEmoji = (e: string) => {
-    setText((t) => t + e);
-    taRef.current?.focus();
-    requestAnimationFrame(() => taRef.current && autoResize(taRef.current));
-  };
-
-  const onPickImage = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    if (file.size > 6 * 1024 * 1024) {
-      toast("error", "حجم الصورة كبير جداً");
-      return;
-    }
-    const reader = new FileReader();
-    reader.onload = () => sendImage(reader.result as string);
-    reader.readAsDataURL(file);
-    setShowAttach(false);
-    e.target.value = "";
   };
 
   const submit = () => {
@@ -154,39 +117,6 @@ export default function Composer() {
 
   return (
     <div className="relative z-20 border-t border-slate-200/80 bg-white/85 px-2 py-2.5 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/85 sm:px-4">
-      <AnimatePresence>
-        {showEmoji && (
-          <div className="absolute bottom-full start-2 mb-2 sm:start-4">
-            <div className="fixed inset-0 z-30" onClick={() => setShowEmoji(false)} />
-            <div className="relative z-40">
-              <EmojiPicker onSelect={insertEmoji} />
-            </div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {showAttach && (
-          <div className="absolute bottom-full start-2 mb-2 sm:start-4">
-            <div className="fixed inset-0 z-30" onClick={() => setShowAttach(false)} />
-            <motion.div
-              initial={{ opacity: 0, y: 12, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 12, scale: 0.95 }}
-              transition={{ duration: 0.15 }}
-              className="relative z-40 grid w-44 grid-cols-2 gap-2 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl dark:border-slate-700 dark:bg-slate-800"
-            >
-              <AttachItem icon={<ImageIcon className="h-5 w-5" />} label="صورة" color="bg-sky-500" onClick={() => fileRef.current?.click()} />
-              <AttachItem icon={<FileText className="h-5 w-5" />} label="ملف" color="bg-violet-500" onClick={() => { toast("info", "سيتم إضافته قريباً"); setShowAttach(false); }} />
-              <AttachItem icon={<MapPin className="h-5 w-5" />} label="موقع" color="bg-emerald-500" onClick={() => { toast("info", "سيتم إضافته قريباً"); setShowAttach(false); }} />
-              <AttachItem icon={<Mic className="h-5 w-5" />} label="تسجيل" color="bg-rose-500" onClick={() => { setShowAttach(false); startRecording(); }} />
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      <input ref={fileRef} type="file" accept="image/*" hidden onChange={onPickImage} />
-
       <AnimatePresence>
         {(replyTo || editing) && (
           <motion.div
@@ -256,20 +186,7 @@ export default function Composer() {
             exit={{ opacity: 0 }}
             className="flex items-end gap-1.5"
           >
-            <div className="flex items-center">
-              <button
-                onClick={() => { setShowAttach((v) => !v); setShowEmoji(false); }}
-                className={cn(
-                  "flex h-10 w-10 items-center justify-center rounded-full text-slate-500 transition-all hover:bg-slate-200/70 hover:text-brand-600 active:scale-90 dark:text-slate-400 dark:hover:bg-slate-700",
-                  showAttach && "bg-brand-500/15 text-brand-600"
-                )}
-                title="مرفق"
-              >
-                <Paperclip className="h-5 w-5" />
-              </button>
-            </div>
-
-            <div className="flex flex-1 items-end rounded-2xl border border-slate-200 bg-slate-50 pe-1 transition-colors focus-within:border-brand-400 focus-within:bg-white focus-within:ring-4 focus-within:ring-brand-500/10 dark:border-slate-700 dark:bg-slate-800 dark:focus-within:bg-slate-800">
+            <div className="flex flex-1 items-end rounded-2xl border border-slate-200 bg-slate-50 transition-colors focus-within:border-brand-400 focus-within:bg-white focus-within:ring-4 focus-within:ring-brand-500/10 dark:border-slate-700 dark:bg-slate-800 dark:focus-within:bg-slate-800">
               <textarea
                 ref={taRef}
                 rows={1}
@@ -279,16 +196,6 @@ export default function Composer() {
                 placeholder={editing ? "عدّل الرسالة..." : "اكتب رسالة..."}
                 className="scrollbar-thin max-h-32 flex-1 resize-none bg-transparent px-3 py-2.5 text-[15px] leading-6 text-slate-900 outline-none placeholder:text-slate-400 dark:text-white"
               />
-              <button
-                onClick={() => { setShowEmoji((v) => !v); setShowAttach(false); }}
-                className={cn(
-                  "mb-1 me-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-slate-500 transition-all hover:bg-slate-200/70 hover:text-brand-600 active:scale-90 dark:text-slate-400 dark:hover:bg-slate-700",
-                  showEmoji && "text-brand-600"
-                )}
-                title="إيموجي"
-              >
-                <Smile className="h-5 w-5" />
-              </button>
             </div>
 
             <div className="flex items-center">
@@ -326,28 +233,6 @@ export default function Composer() {
         )}
       </AnimatePresence>
     </div>
-  );
-}
-
-function AttachItem({
-  icon,
-  label,
-  color,
-  onClick,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  color: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex flex-col items-center gap-1.5 rounded-xl p-2 transition-colors hover:bg-slate-100 dark:hover:bg-slate-700"
-    >
-      <span className={cn("flex h-10 w-10 items-center justify-center rounded-full text-white", color)}>{icon}</span>
-      <span className="text-xs font-semibold text-slate-600 dark:text-slate-300">{label}</span>
-    </button>
   );
 }
 

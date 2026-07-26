@@ -66,7 +66,7 @@ export default function Login() {
             >
               <Users className="h-9 w-9 text-white" strokeWidth={2.4} />
             </motion.div>
-            <h1 className="relative text-[26px] font-extrabold leading-tight text-white">{groupName}</h1>
+            <h1 className="group-title relative text-[28px] leading-tight drop-shadow-lg">{groupName}</h1>
             <p className="relative mt-1.5 text-sm text-white/80">منصة التواصل بين الأعضاء</p>
           </div>
 

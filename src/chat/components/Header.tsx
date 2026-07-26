@@ -44,7 +44,7 @@ export default function Header() {
         </div>
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
-            <h2 className="truncate text-[15px] font-bold text-slate-900 dark:text-white">{groupName}</h2>
+            <h2 className="group-title truncate text-[15px]">{groupName}</h2>
             <Badge tone="brand" className="hidden sm:inline-flex">مجتمع</Badge>
           </div>
           <p className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">

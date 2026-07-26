@@ -148,9 +148,9 @@ export const useStore = create<ChatState>((set, get) => ({
   isAdmin: false,
   theme:
     typeof localStorage !== "undefined" &&
-    localStorage.getItem("chat_theme") === "dark"
-      ? "dark"
-      : "light",
+    localStorage.getItem("chat_theme") === "light"
+      ? "light"
+      : "dark",
   fontScale:
     typeof localStorage !== "undefined"
       ? parseFloat(localStorage.getItem("chat_msgsize") || "17") || 17
