@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "providers": {
+    "kilo": {
+      "settings": {
+        "baseURL": "https://ai-gateway.kilo.ai/api/v1"
+      }
+    }
+  }
+}
