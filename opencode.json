@@ -3,7 +3,7 @@
   "providers": {
     "kilo": {
       "settings": {
-        "baseURL": "https://ai-gateway.kilo.ai/api/v1"
+        "baseURL": "https://api.kilo.ai/api/gateway"
       }
     }
   }
