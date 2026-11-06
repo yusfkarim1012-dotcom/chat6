@@ -218,3 +218,13 @@ your url is: https://busy-times-share.loca.lt
 2026-11-06 16:47:58 SERVER DOWN — restarting
 2026-11-06 16:47:58 server started pid 5089
 ROOT terminal on port 7682
+2026-11-06 16:49:48 server already up
+your url is: https://eighty-numbers-grin.loca.lt
+2026-11-06 16:49:50 tunnel verified (lt) url=https://eighty-numbers-grin.loca.lt
+2026-11-06 16:49:50 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:50:32 SERVER DOWN — restarting
+2026-11-06 16:50:32 server started pid 5680
+ROOT terminal on port 7682
+2026-11-06 16:51:13 PUBLIC URL STALE — refreshing
+your url is: https://ninety-turkeys-speak.loca.lt
+2026-11-06 16:51:15 tunnel verified (lt) url=https://ninety-turkeys-speak.loca.lt

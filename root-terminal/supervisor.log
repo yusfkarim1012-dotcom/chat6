@@ -1,0 +1,10 @@
+2026-11-06 16:49:47 supervisor started (pid 5543)
+2026-11-06 16:49:47 WATCHDOG DOWN — restarting
+2026-11-06 16:49:48 server already up
+2026-11-06 16:49:50 tunnel verified (lt) url=https://eighty-numbers-grin.loca.lt
+2026-11-06 16:49:50 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:50:32 SERVER DOWN — restarting
+2026-11-06 16:50:32 server started pid 5680
+/workspace/app/root-terminal/watch.sh: line 102:  5566 Killed                  nohup lt --port "$PORT" >> "$LOG" 2>&1
+2026-11-06 16:51:13 PUBLIC URL STALE — refreshing
+2026-11-06 16:51:15 tunnel verified (lt) url=https://ninety-turkeys-speak.loca.lt
