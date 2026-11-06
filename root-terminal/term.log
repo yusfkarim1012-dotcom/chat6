@@ -1,0 +1,211 @@
+Fri Nov  6 04:20:18 PM UTC 2026 server already up
+watchdog running — logs: /workspace/app/root-terminal/term.log
+Fri Nov  6 04:21:15 PM UTC 2026 server already up
+watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:22:06 server already up
+2026-11-06T16:22:07Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-06T16:22:07Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-06T16:22:11Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:11Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-06T16:22:11Z INF |  https://eventually-corp-plymouth-anthony.trycloudflare.com                                |
+2026-11-06T16:22:11Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:11Z INF Version 2026.10.7 (Checksum 1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872)
+2026-11-06T16:22:11Z INF GOOS: linux, GOVersion: go1.27.3, GoArch: amd64
+2026-11-06T16:22:11Z INF Settings: map[cred-file:/root/.cloudflared/root-terminal.json credentials-file:/root/.cloudflared/root-terminal.json ha-connections:1 protocol:quic url:http://localhost:7682]
+2026-11-06T16:22:11Z INF cloudflared will not automatically update if installed by a package manager.
+2026-11-06T16:22:11Z INF Generated Connector ID: addcdcb4-da47-4bd4-9432-c55d780a6ce4
+2026-11-06T16:22:11Z ERR Couldn't start tunnel error="The last ingress rule must match all URLs (i.e. it should not have a hostname or path filter)"
+The last ingress rule must match all URLs (i.e. it should not have a hostname or path filter)
+2026-11-06 16:22:12 tunnel started pid 1785 url=https://eventually-corp-plymouth-anthony.trycloudflare.com
+2026-11-06 16:22:12 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:22:22 TUNNEL DOWN — restarting
+2026-11-06T16:22:22Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-06T16:22:22Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-06 16:22:23 tunnel started pid 1846 url=https://eventually-corp-plymouth-anthony.trycloudflare.com
+2026-11-06T16:22:27Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:27Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-06T16:22:27Z INF |  https://ppc-flexibility-wide-observation.trycloudflare.com                                |
+2026-11-06T16:22:27Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:27Z INF Version 2026.10.7 (Checksum 1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872)
+2026-11-06T16:22:27Z INF GOOS: linux, GOVersion: go1.27.3, GoArch: amd64
+2026-11-06T16:22:27Z INF Settings: map[cred-file:/root/.cloudflared/root-terminal.json credentials-file:/root/.cloudflared/root-terminal.json ha-connections:1 protocol:quic url:http://localhost:7682]
+2026-11-06T16:22:27Z INF cloudflared will not automatically update if installed by a package manager.
+2026-11-06T16:22:27Z INF Generated Connector ID: 9d75af17-abc6-42a2-acc3-d244f62bd571
+2026-11-06T16:22:27Z ERR Couldn't start tunnel error="The last ingress rule must match all URLs (i.e. it should not have a hostname or path filter)"
+The last ingress rule must match all URLs (i.e. it should not have a hostname or path filter)
+2026-11-06 16:22:33 TUNNEL DOWN — restarting
+2026-11-06T16:22:33Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-06T16:22:33Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-06 16:22:34 tunnel started pid 1880 url=https://ppc-flexibility-wide-observation.trycloudflare.com
+2026-11-06T16:22:38Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:38Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-06T16:22:38Z INF |  https://agricultural-habits-parks-prospects.trycloudflare.com                             |
+2026-11-06T16:22:38Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:38Z INF Version 2026.10.7 (Checksum 1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872)
+2026-11-06T16:22:38Z INF GOOS: linux, GOVersion: go1.27.3, GoArch: amd64
+2026-11-06T16:22:38Z INF Settings: map[cred-file:/root/.cloudflared/root-terminal.json credentials-file:/root/.cloudflared/root-terminal.json ha-connections:1 protocol:quic url:http://localhost:7682]
+2026-11-06T16:22:38Z INF cloudflared will not automatically update if installed by a package manager.
+2026-11-06T16:22:38Z INF Generated Connector ID: dc86b51e-9a30-4964-8a0e-57adc85d3a06
+2026-11-06T16:22:38Z ERR Couldn't start tunnel error="The last ingress rule must match all URLs (i.e. it should not have a hostname or path filter)"
+The last ingress rule must match all URLs (i.e. it should not have a hostname or path filter)
+2026-11-06 16:22:48 server already up
+2026-11-06T16:22:49Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-06T16:22:49Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-06 16:22:50 tunnel started pid 1950 url=https://agricultural-habits-parks-prospects.trycloudflare.com
+2026-11-06 16:22:50 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06T16:22:54Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:54Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-06T16:22:54Z INF |  https://mtv-tuning-briefly-ultimate.trycloudflare.com                                     |
+2026-11-06T16:22:54Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:22:54Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-11-06T16:22:54Z INF Version 2026.10.7 (Checksum 1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872)
+2026-11-06T16:22:54Z INF GOOS: linux, GOVersion: go1.27.3, GoArch: amd64
+2026-11-06T16:22:54Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:7682]
+2026-11-06T16:22:54Z INF cloudflared will not automatically update if installed by a package manager.
+2026-11-06T16:22:54Z INF Generated Connector ID: 073959a5-5351-40b8-8307-2460815aec70
+2026-11-06T16:22:54Z INF Initial protocol quic
+2026-11-06T16:22:54Z INF ICMP proxy will use 10.0.0.1 as source for IPv4
+2026-11-06T16:22:54Z INF ICMP proxy will use fd00::11 in zone cfeth0 as source for IPv6
+2026-11-06T16:22:54Z WRN The user running cloudflared process has a GID (group ID) that is not within ping_group_range. You might need to add that user to a group within that range, or instead update the range to encompass a group the user is already in by modifying /proc/sys/net/ipv4/ping_group_range. Otherwise cloudflared will not be able to ping this network error="Group ID 0 is not between ping group 1 to 0"
+2026-11-06T16:22:54Z WRN ICMP proxy feature is disabled error="cannot create ICMPv4 proxy: Group ID 0 is not between ping group 1 to 0 nor ICMPv6 proxy: socket: permission denied"
+2026-11-06T16:22:54Z INF ICMP proxy will use 10.0.0.1 as source for IPv4
+2026-11-06T16:22:54Z INF ICMP proxy will use fd00::11 in zone cfeth0 as source for IPv6
+2026-11-06T16:22:54Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-11-06T16:22:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-11-06T16:22:55Z INF Registered tunnel connection connIndex=0 connection=9f23430e-2e38-433d-a447-ca67026abb43 event=0 ip=198.41.192.27 location=ams13 protocol=quic
+2026-11-06T16:23:04Z INF +----------------------------------------------------------------------------------------------------+
+2026-11-06T16:23:04Z INF |                                      CONNECTIVITY PRE-CHECKS                                       |
+2026-11-06T16:23:04Z INF +----------------------------------------------------------------------------------------------------+
+2026-11-06T16:23:04Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                                      |
+2026-11-06T16:23:04Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully                    |
+2026-11-06T16:23:04Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully                    |
+2026-11-06T16:23:04Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful                   |
+2026-11-06T16:23:04Z INF |  UDP Connectivity  region2.v2.argotunnel.com  FAIL    QUIC connection failed                       |
+2026-11-06T16:23:04Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful                 |
+2026-11-06T16:23:04Z INF |  TCP Connectivity  region2.v2.argotunnel.com  FAIL    HTTP/2 connection is blocked or unreachable  |
+2026-11-06T16:23:04Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable                             |
+2026-11-06T16:23:04Z INF |  ERROR: Allow outbound QUIC traffic on port 7844 or use HTTP2.                                     |
+2026-11-06T16:23:04Z INF |  ERROR: Allow outbound TCP on port 7844.                                                           |
+2026-11-06T16:23:04Z INF |                                                                                                    |
+2026-11-06T16:23:04Z INF |  SUMMARY: Environment has critical failures. cloudflared may not be able to establish a tunnel.    |
+2026-11-06T16:23:04Z INF +----------------------------------------------------------------------------------------------------+
+2026-11-06T16:23:04Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=pass target=region1.v2.argotunnel.com
+2026-11-06T16:23:04Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=pass target=region2.v2.argotunnel.com
+2026-11-06T16:23:04Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=pass target=region1.v2.argotunnel.com
+2026-11-06T16:23:04Z INF precheck component="UDP Connectivity" details="QUIC connection failed" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=fail target=region2.v2.argotunnel.com
+2026-11-06T16:23:04Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=pass target=region1.v2.argotunnel.com
+2026-11-06T16:23:04Z INF precheck component="TCP Connectivity" details="HTTP/2 connection is blocked or unreachable" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=fail target=region2.v2.argotunnel.com
+2026-11-06T16:23:04Z INF precheck component="Cloudflare API" details="API is reachable" run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb status=pass target=api.cloudflare.com:443
+2026-11-06T16:23:04Z INF precheck complete hard_fail=true run_id=b936f4aa-ad85-41c1-a692-9d7927bc80eb
+2026-11-06T16:24:33Z INF Initiating graceful shutdown due to signal terminated ...
+2026-11-06T16:24:33Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.27
+2026-11-06T16:24:33Z ERR Connection terminated connIndex=0
+2026-11-06T16:24:33Z ERR no more connections active and exiting
+2026-11-06T16:24:33Z INF Tunnel server stopped
+2026-11-06T16:24:33Z INF Metrics server stopped
+2026-11-06 16:24:34 server already up
+2026-11-06T16:24:35Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-06T16:24:35Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-06T16:24:40Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:24:40Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-06T16:24:40Z INF |  https://anchor-recent-treating-theorem.trycloudflare.com                                  |
+2026-11-06T16:24:40Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:24:40Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-11-06T16:24:40Z INF Version 2026.10.7 (Checksum 1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872)
+2026-11-06T16:24:40Z INF GOOS: linux, GOVersion: go1.27.3, GoArch: amd64
+2026-11-06T16:24:40Z INF Settings: map[edge-ip-version:4 ha-connections:1 protocol:quic region:eu url:http://localhost:7682]
+2026-11-06T16:24:40Z INF cloudflared will not automatically update if installed by a package manager.
+2026-11-06T16:24:40Z INF Generated Connector ID: ea65818b-a608-491c-adde-28b95692e037
+2026-11-06T16:24:40Z INF Initial protocol quic
+2026-11-06T16:24:40Z INF ICMP proxy will use 10.0.0.1 as source for IPv4
+2026-11-06T16:24:40Z INF ICMP proxy will use fd00::11 in zone cfeth0 as source for IPv6
+2026-11-06T16:24:40Z WRN The user running cloudflared process has a GID (group ID) that is not within ping_group_range. You might need to add that user to a group within that range, or instead update the range to encompass a group the user is already in by modifying /proc/sys/net/ipv4/ping_group_range. Otherwise cloudflared will not be able to ping this network error="Group ID 0 is not between ping group 1 to 0"
+2026-11-06T16:24:40Z WRN ICMP proxy feature is disabled error="cannot create ICMPv4 proxy: Group ID 0 is not between ping group 1 to 0 nor ICMPv6 proxy: socket: permission denied"
+2026-11-06T16:24:40Z ERR edge discovery: error looking up Cloudflare edge IPs: the DNS query failed error="lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host" event=0
+2026-11-06T16:24:40Z ERR Please try the following things to diagnose this issue: event=0
+2026-11-06T16:24:40Z ERR   1. ensure that argotunnel.com is returning "origintunneld" service records. event=0
+2026-11-06T16:24:40Z ERR      Run your system's equivalent of: dig srv _origintunneld._tcp.argotunnel.com event=0
+2026-11-06T16:24:40Z ERR   2. ensure that your DNS resolver is not returning compressed SRV records. event=0
+2026-11-06T16:24:40Z ERR      See GitHub issue https://github.com/golang/go/issues/27546 event=0
+2026-11-06T16:24:40Z ERR      For example, you could use Cloudflare's 1.1.1.1 as your resolver: event=0
+2026-11-06T16:24:40Z ERR      https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/ event=0
+2026-11-06T16:24:40Z ERR edge discovery: error looking up Cloudflare edge IPs: the DNS query failed error="lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host" event=0
+2026-11-06T16:24:40Z ERR Please try the following things to diagnose this issue: event=0
+2026-11-06T16:24:40Z ERR   1. ensure that argotunnel.com is returning "origintunneld" service records. event=0
+2026-11-06T16:24:40Z ERR      Run your system's equivalent of: dig srv _origintunneld._tcp.argotunnel.com event=0
+2026-11-06T16:24:40Z ERR   2. ensure that your DNS resolver is not returning compressed SRV records. event=0
+2026-11-06T16:24:40Z ERR      See GitHub issue https://github.com/golang/go/issues/27546 event=0
+2026-11-06T16:24:40Z ERR      For example, you could use Cloudflare's 1.1.1.1 as your resolver: event=0
+2026-11-06T16:24:40Z ERR      https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/ event=0
+2026-11-06T16:24:40Z INF ICMP proxy will use 10.0.0.1 as source for IPv4
+2026-11-06T16:24:40Z INF ICMP proxy will use fd00::11 in zone cfeth0 as source for IPv6
+2026-11-06T16:24:40Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-11-06T16:24:40Z ERR edge discovery: error looking up Cloudflare edge IPs: the DNS query failed error="lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host" event=0
+2026-11-06T16:24:40Z ERR Please try the following things to diagnose this issue: event=0
+2026-11-06T16:24:40Z ERR   1. ensure that argotunnel.com is returning "origintunneld" service records. event=0
+2026-11-06T16:24:40Z ERR      Run your system's equivalent of: dig srv _origintunneld._tcp.argotunnel.com event=0
+2026-11-06T16:24:40Z ERR   2. ensure that your DNS resolver is not returning compressed SRV records. event=0
+2026-11-06T16:24:40Z ERR      See GitHub issue https://github.com/golang/go/issues/27546 event=0
+2026-11-06T16:24:40Z ERR      For example, you could use Cloudflare's 1.1.1.1 as your resolver: event=0
+2026-11-06T16:24:40Z ERR      https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/ event=0
+2026-11-06T16:24:40Z INF Tunnel server stopped
+2026-11-06T16:24:40Z ERR Initiating shutdown error="Could not lookup srv records on _eu-v2-origintunneld._tcp.argotunnel.com: lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host"
+2026-11-06T16:24:40Z INF Metrics server stopped
+Could not lookup srv records on _eu-v2-origintunneld._tcp.argotunnel.com: lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host
+2026-11-06 16:25:06 tunnel started pid 2144 (URL pending verification)
+2026-11-06 16:25:06 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:25:16 TUNNEL DOWN — restarting
+2026-11-06T16:25:16Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-11-06T16:25:16Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-11-06T16:25:21Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:25:21Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-11-06T16:25:21Z INF |  https://cloud-brush-purpose-shipments.trycloudflare.com                                   |
+2026-11-06T16:25:21Z INF +--------------------------------------------------------------------------------------------+
+2026-11-06T16:25:21Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-11-06T16:25:21Z INF Version 2026.10.7 (Checksum 1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872)
+2026-11-06T16:25:21Z INF GOOS: linux, GOVersion: go1.27.3, GoArch: amd64
+2026-11-06T16:25:21Z INF Settings: map[edge-ip-version:4 ha-connections:1 protocol:quic region:eu url:http://localhost:7682]
+2026-11-06T16:25:21Z INF cloudflared will not automatically update if installed by a package manager.
+2026-11-06T16:25:21Z INF Generated Connector ID: eb8e13ad-b974-4009-a5e5-8247ed8acc8f
+2026-11-06T16:25:21Z INF Initial protocol quic
+2026-11-06T16:25:21Z INF ICMP proxy will use 10.0.0.1 as source for IPv4
+2026-11-06T16:25:21Z INF ICMP proxy will use fd00::11 in zone cfeth0 as source for IPv6
+2026-11-06T16:25:21Z WRN The user running cloudflared process has a GID (group ID) that is not within ping_group_range. You might need to add that user to a group within that range, or instead update the range to encompass a group the user is already in by modifying /proc/sys/net/ipv4/ping_group_range. Otherwise cloudflared will not be able to ping this network error="Group ID 0 is not between ping group 1 to 0"
+2026-11-06T16:25:21Z WRN ICMP proxy feature is disabled error="cannot create ICMPv4 proxy: Group ID 0 is not between ping group 1 to 0 nor ICMPv6 proxy: socket: permission denied"
+2026-11-06T16:25:21Z ERR edge discovery: error looking up Cloudflare edge IPs: the DNS query failed error="lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host" event=0
+2026-11-06T16:25:21Z ERR Please try the following things to diagnose this issue: event=0
+2026-11-06T16:25:21Z ERR   1. ensure that argotunnel.com is returning "origintunneld" service records. event=0
+2026-11-06T16:25:21Z ERR      Run your system's equivalent of: dig srv _origintunneld._tcp.argotunnel.com event=0
+2026-11-06T16:25:21Z ERR   2. ensure that your DNS resolver is not returning compressed SRV records. event=0
+2026-11-06T16:25:21Z ERR      See GitHub issue https://github.com/golang/go/issues/27546 event=0
+2026-11-06T16:25:21Z ERR      For example, you could use Cloudflare's 1.1.1.1 as your resolver: event=0
+2026-11-06T16:25:21Z ERR      https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/ event=0
+2026-11-06T16:25:21Z ERR edge discovery: error looking up Cloudflare edge IPs: the DNS query failed error="lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host" event=0
+2026-11-06T16:25:21Z ERR Please try the following things to diagnose this issue: event=0
+2026-11-06T16:25:21Z ERR   1. ensure that argotunnel.com is returning "origintunneld" service records. event=0
+2026-11-06T16:25:21Z ERR      Run your system's equivalent of: dig srv _origintunneld._tcp.argotunnel.com event=0
+2026-11-06T16:25:21Z ERR   2. ensure that your DNS resolver is not returning compressed SRV records. event=0
+2026-11-06T16:25:21Z ERR      See GitHub issue https://github.com/golang/go/issues/27546 event=0
+2026-11-06T16:25:21Z ERR      For example, you could use Cloudflare's 1.1.1.1 as your resolver: event=0
+2026-11-06T16:25:21Z ERR      https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/ event=0
+2026-11-06T16:25:21Z INF ICMP proxy will use 10.0.0.1 as source for IPv4
+2026-11-06T16:25:21Z INF ICMP proxy will use fd00::11 in zone cfeth0 as source for IPv6
+2026-11-06T16:25:21Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-11-06T16:25:21Z ERR edge discovery: error looking up Cloudflare edge IPs: the DNS query failed error="lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host" event=0
+2026-11-06T16:25:21Z ERR Please try the following things to diagnose this issue: event=0
+2026-11-06T16:25:21Z ERR   1. ensure that argotunnel.com is returning "origintunneld" service records. event=0
+2026-11-06T16:25:21Z ERR      Run your system's equivalent of: dig srv _origintunneld._tcp.argotunnel.com event=0
+2026-11-06T16:25:21Z ERR   2. ensure that your DNS resolver is not returning compressed SRV records. event=0
+2026-11-06T16:25:21Z ERR      See GitHub issue https://github.com/golang/go/issues/27546 event=0
+2026-11-06T16:25:21Z ERR      For example, you could use Cloudflare's 1.1.1.1 as your resolver: event=0
+2026-11-06T16:25:21Z ERR      https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/ event=0
+2026-11-06T16:25:21Z INF Tunnel server stopped
+2026-11-06T16:25:21Z ERR Initiating shutdown error="Could not lookup srv records on _eu-v2-origintunneld._tcp.argotunnel.com: lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host"
+2026-11-06T16:25:21Z INF Metrics server stopped
+Could not lookup srv records on _eu-v2-origintunneld._tcp.argotunnel.com: lookup _eu-v2-origintunneld._tcp.argotunnel.com on 1.1.1.1:53: no such host
+2026-11-06 16:25:48 tunnel started pid 2414 (URL pending verification)
+2026-11-06 16:37:12 server started pid 3725
+ROOT terminal on port 7682
+your url is: https://root-terminal-yusf.loca.lt
+2026-11-06 16:37:15 tunnel verified (lt) url=https://root-terminal-yusf.loca.lt
+2026-11-06 16:37:15 watchdog running — logs: /workspace/app/root-terminal/term.log
