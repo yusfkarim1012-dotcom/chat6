@@ -209,3 +209,12 @@ ROOT terminal on port 7682
 your url is: https://root-terminal-yusf.loca.lt
 2026-11-06 16:37:15 tunnel verified (lt) url=https://root-terminal-yusf.loca.lt
 2026-11-06 16:37:15 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:46:09 server already up
+your url is: https://clever-fox-93.loca.lt
+2026-11-06 16:47:14 server already up
+your url is: https://busy-times-share.loca.lt
+2026-11-06 16:47:17 tunnel verified (lt) url=https://busy-times-share.loca.lt
+2026-11-06 16:47:17 watchdog running — logs: /workspace/app/root-terminal/term.log
+2026-11-06 16:47:58 SERVER DOWN — restarting
+2026-11-06 16:47:58 server started pid 5089
+ROOT terminal on port 7682

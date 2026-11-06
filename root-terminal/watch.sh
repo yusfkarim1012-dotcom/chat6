@@ -8,6 +8,7 @@ export TERM_USER="${TERM_USER:-yusf}"
 export PORT="${PORT:-7682}"
 LOG="$DIR/term.log"
 URLFILE="$DIR/url.txt"
+BYPASS="abypass-tunnel-reminder: 1"
 
 log() { echo "$(date '+%Y-%m-%d %H:%M:%S') $*" | tee -a "$LOG"; }
 
@@ -51,13 +52,14 @@ start_tunnel() {
   cd "$DIR"
   rm -f "$URLFILE"
   # Try localtunnel first (more reliable in sandboxed envs)
-  nohup lt --port "$PORT" --subdomain root-terminal-yusf >>"$LOG" 2>&1 &
+  nohup lt --port "$PORT" >>"$LOG" 2>&1 &
   local pid=$!
   for i in $(seq 1 30); do
     sleep 1
-    if curl -s --connect-timeout 10 "https://root-terminal-yusf.loca.lt/manifest.json" | grep -q "ROOT Terminal"; then
-      echo "https://root-terminal-yusf.loca.lt" > "$URLFILE"
-      log "tunnel verified (lt) url=https://root-terminal-yusf.loca.lt"
+    cand=$(grep -oE 'https://[a-zA-Z0-9-]+\.loca\.lt' "$LOG" | tail -1)
+    if [ -n "$cand" ] && curl -s --connect-timeout 10 -H "$BYPASS" "$cand/manifest.json" | grep -q "ROOT Terminal"; then
+      echo "$cand" > "$URLFILE"
+      log "tunnel verified (lt) url=$cand"
       return 0
     fi
   done
@@ -93,7 +95,7 @@ while true; do
     start_tunnel
   fi
   cur=$(cat "$URLFILE" 2>/dev/null)
-  if [ -n "$cur" ] && ! curl -s --connect-timeout 10 "$cur/manifest.json" | grep -q "ROOT Terminal"; then
+  if [ -n "$cur" ] && ! curl -s --connect-timeout 10 -H "$BYPASS" "$cur/manifest.json" | grep -q "ROOT Terminal"; then
     log "PUBLIC URL STALE — refreshing"
     start_tunnel
   fi
